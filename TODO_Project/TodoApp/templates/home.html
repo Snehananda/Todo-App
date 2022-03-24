@@ -1,0 +1,32 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>Todo App</h1>
+        <div>
+        <button id="create-btn" style="margin-bottom: 20px;">Create</button><br>
+        <button id="update-btn" style="margin-bottom: 20px;">Update</button><br>
+        <button id="display-btn" style="margin-bottom: 20px;">Display</button><br>
+        <button id="delete-btn">Delete</button><br>
+        </div>
+
+        <script type="text/javascript">
+            document.getElementById("create-btn"). onclick = function () {
+            window.location.href = "/create/";
+            };
+
+            document.getElementById("update-btn"). onclick = function () {
+            window.location.href = "/update/";
+            };
+
+            document.getElementById("display-btn"). onclick = function () {
+            window.location.href = "/display/";
+            };
+
+            document.getElementById("delete-btn"). onclick = function () {
+            window.location.href = "/delete/";
+            };
+        </script>
+    </body>
+</html>

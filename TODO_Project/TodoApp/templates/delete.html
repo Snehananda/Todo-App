@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Todo</title>
+    </head>
+    <body>
+        <h1>Update Todo Event</h1>
+
+        <form action="/delete-event/" method="post">
+
+            <p>Title: </p>
+            <input type="text" name="title" required/>
+
+            <p></p>
+            <input type="submit" value="Delete" />
+
+        </form>
+
+        <Button id="back-btn">Go Back</Button>
+
+        <script type="text/javascript">
+            document.getElementById("back-btn"). onclick = function () {
+            window.location.href = "/";
+            };
+        </script>
+    </body>
+</html>

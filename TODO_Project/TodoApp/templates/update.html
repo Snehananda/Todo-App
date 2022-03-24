@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Todo</title>
+    </head>
+    <body>
+        <h1>Update Todo Event</h1>
+
+        <form action="/update-event/" method="post">
+
+            <p>Title: </p>
+            <input type="text" name="title" required/>
+
+            <p>Description: </p>
+            <textarea name="descp" rows="3" cols="50"></textarea>
+
+            <p>Completed: </p>
+            <input type="text" name="status" />
+
+            <p>Due Date</p>
+            <input type="date" name="due-date" min="2022-03-24"/>
+            <p></p>
+            <input type="submit" value="Update" />
+
+        </form>
+
+        <Button id="back-btn">Go Back</Button>
+
+        <script type="text/javascript">
+            document.getElementById("back-btn"). onclick = function () {
+            window.location.href = "/";
+            };
+        </script>
+        
+    </body>
+</html>
